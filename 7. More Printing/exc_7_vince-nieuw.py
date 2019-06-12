@@ -17,5 +17,21 @@ end11 = "e"
 end12 = "r"
 
 # watch end = ' ' at the end. try removing it to see what happens.
-print(end1 + end2 + end3 + end4 + end5 + end6, ) #end=' '
+print(end1 + end2 + end3 + end4 + end5 + end6, end=' ' ) 
 print(end7 + end8 + end9 + end10 + end11 + end12)
+
+"""
+This exercise is kind of tricky since it tricks you into believing that end is just another variable that we're setting.
+In fact, end in a print fucnction is a parameter (-> an option we can provide to Python's print statement).
+End defines how the print statement is closed. By default, it inserts a newline. 
+
+Try it:
+"""
+print('########') 
+#exc 1
+print("a first print statement.")
+print("a second print statement on a new line.")
+
+#exc 2
+print("a first print statement.", end=" But, this is not ")
+print("a second print statement on a new line.")
